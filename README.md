@@ -4,17 +4,23 @@
 
 ## 적용 예시
 
+### 뉴진스 Ditto 장면
+
+창가에 모인 다섯 멤버의 배치와 차분한 녹색·청색 조명을 살리고, 얼굴과 머리카락, 니트 의상에 부드러운 유화 질감을 더했습니다.
+
+![뉴진스 Ditto 장면에 painterly-oil-style 적용](example-newjeans-ditto.png)
+
 ### WISH 화보
 
 얼굴은 부드럽고 알아볼 수 있게 유지하면서, 머리카락과 의상·배경에 층이 있는 유화 붓질을 더했습니다.
 
 ![WISH 화보에 painterly-oil-style 적용](example-painterly-oil-style.png)
 
-### 분홍빛 방의 단체 사진
+### 리센느 단체 사진
 
-얼굴에는 은은한 색층, 머리카락에는 결을 따라 흐르는 붓질, 옷과 침구·배경에는 더 풍부한 질감을 적용했습니다.
+리센느 멤버들의 얼굴 특징과 다섯 명의 배치를 살리면서, 얼굴에는 은은한 색층을, 머리카락에는 결을 따라 흐르는 붓질을, 의상과 침구·배경에는 더 풍부한 질감을 적용했습니다.
 
-![분홍빛 방 사진에 painterly-oil-style 적용](example-pastel-bedroom.png)
+![리센느 단체 사진에 painterly-oil-style 적용](example-rescene.png)
 
 ## 설치
 
@@ -22,13 +28,13 @@
 
 ```powershell
 $skillDir = if ($env:CODEX_HOME) {
-  Join-Path $env:CODEX_HOME 'skills\painterly-oil-style'
+  Join-Path $env:CODEX_HOME 'skills\\painterly-oil-style'
 } else {
-  Join-Path $HOME '.codex\skills\painterly-oil-style'
+  Join-Path $HOME '.codex\\skills\\painterly-oil-style'
 }
 
 New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
-Copy-Item .\SKILL.md (Join-Path $skillDir 'SKILL.md') -Force
+Copy-Item .\\SKILL.md (Join-Path $skillDir 'SKILL.md') -Force
 ```
 
 ## 사용
@@ -48,4 +54,3 @@ $painterly-oil-style 이 사진을 부드럽고 풍부한 유화풍으로 바꿔
 - “질감은 유지하고 선처럼 보이는 자국만 줄여줘.”
 
 이미지 도구에 따라 얼굴 특징이 조금 달라질 수 있습니다. 결과에서 얼굴과 표정을 확인하고, 차이가 보이면 얼굴 보존을 우선한 수정 요청을 덧붙이세요.
-
