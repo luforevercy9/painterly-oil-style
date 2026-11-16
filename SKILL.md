@@ -1,37 +1,37 @@
 ---
 name: painterly-oil-style
-description: Apply a richly layered oil-illustration look to an existing image while preserving its subject, composition, and facial likeness. Use when the user asks for this oil-painting style or invokes this skill.
+description: Apply a layered oil-illustration look to an existing image, preserving composition and facial likeness while keeping faces softly painted and hair visibly painterly. Use when the user asks for this style or invokes the skill.
 ---
 
 # Painterly oil style
 
-Transform the supplied image into a richly painted illustration with carefully observed forms, layered color, and expressive but integrated paint texture. Preserve the source's subject, identity, pose, number of people or objects, arrangement, framing, and meaningful details unless the user asks for a change. Do not introduce the style references' characters, butterflies, flowers, jewelry, or dark vignette into unrelated images.
+Transform the supplied image into a coherent oil-painting-inspired illustration. The target balance is softly painted, recognizable faces; clearly painterly hair; and richer tactile texture in clothing and surroundings. Preserve the source's subject, identity, pose, number of people or objects, arrangement, framing, and meaningful details unless the user asks for a change. Do not introduce elements from the style references into unrelated images.
 
-Use an image-editing tool that accepts the source image and edit it directly. Follow the image tool's instructions for including the source image and retaining transparency where applicable. If no source image is available, ask for one. Choose the available image tool according to its own instructions.
+Use an image-editing tool that accepts the source image and edit it directly. Follow the image tool's instructions for including the source and retaining transparency. If no source image is available, ask for one. Choose the available image tool according to its instructions.
 
-## Portrait and face fidelity
+## Faces and identity
 
-For photographs and portraits, preserving identity and facial likeness takes priority over brush texture. Keep each person's recognizable facial geometry and distinguishing features, including face shape, eyes, nose, mouth, expression, gaze, and apparent age. Do not beautify, redesign, stylize, or homogenize faces unless requested. Preserve the number and placement of people.
+For photographs and portraits, facial identity and expression take priority over brush texture. Preserve recognizable facial geometry and features: face shape, eyes, nose, mouth, gaze, expression, and apparent age. Do not beautify, redesign, homogenize, or change the number or placement of people unless requested.
 
-Keep faces visibly painted through soft tonal modeling and subtle layered color, while keeping skin smooth and natural. By default, use almost no distinct brush marks, canvas grain, or impasto on skin and small facial features. Avoid streaks across faces or lines that redraw their contours. If stronger painterly texture is requested, increase it first in hair, clothing, and background; keep face texture restrained unless the user explicitly asks otherwise. When a choice must be made, reduce texture on faces rather than changing recognizable features. Image tools may still introduce some likeness drift; inspect the result and describe any remaining limitation accurately.
+Faces should still read as painted, rather than photographic or airbrushed. Model them with soft tonal planes, subtle layered pigments, and gentle warm-cool color shifts. Allow delicate blended brush modulation in highlights and shadows, while keeping skin smooth. Avoid distinct streaks, scratch-like marks, coarse canvas grain, and heavy impasto on skin or small facial features. When likeness and texture conflict, reduce stroke visibility before changing facial features. Image tools can still introduce likeness drift; inspect the result and state any remaining limitation accurately.
 
-## Paint treatment
+## Hair and surface texture
 
-Use a moderately textured oil finish by default. Preserve layered pigments, subtle canvas tooth, tonal variation, and tactile painted surfaces. Let strokes follow form, but integrate them into color and shading so they read as paint texture rather than drawn lines. Keep texture visible while softening sharp, high-contrast, repetitive, or scratch-like marks, especially on clothing and broad shadow areas. Avoid both a flat filter-like finish and uniformly strong impasto.
+Give hair clearly visible but soft oil-paint texture. Let varied, curved strokes follow the direction and volume of locks, blending them into larger shapes. Keep hair from looking photographic or uniformly smooth, but avoid outlining every strand or creating repetitive parallel lines.
 
-For photographs, make the overall image read as an oil painting through rich color layers, soft transitions, and moderate texture in hair, clothing, and background. Use gentler transitions on skin, but do not make faces look pasted in or entirely photographic. Vary longer directional strokes through hair and clothing; use broader, looser strokes in backgrounds. Avoid obvious parallel stripes, contour outlines, and repeated scratch marks.
+Use a moderately textured finish across the image: layered pigment, subtle canvas tooth, color variation, and tactile surfaces. Let clothing and backgrounds carry richer, more visible texture than skin. Make brush marks describe form and material, not appear as drawn scratches. Avoid a flat filter-like result and uniformly strong impasto.
 
-Preserve the source lighting, mood, and color relationships; mix neighboring hues into shadows rather than flattening them to black. Use warm highlights or jewel tones only when they fit the original scene.
+For photographs, make the whole image read as one painting: softly modeled faces with subtle pigment, painterly hair, and more expressive texture in clothing and surroundings. If faces or hair look noticeably more photographic than the rest, use one targeted refinement to add blended color planes to faces or soft directional paint texture to hair without changing their shapes or expressions. If strokes look too line-like, soften their edges and reduce contrast while preserving the painted texture.
 
-Adapt the treatment to the medium:
+Preserve the source lighting, mood, and color relationships. Mix neighboring hues into shadows rather than flattening them to black; use warm highlights or jewel tones only when they suit the scene.
 
-- For photographs, prioritize recognizable facial likeness and scene geometry; keep skin smooth and softly painted, with richer texture mainly in hair, clothing, and background.
-- For existing illustrations, preserve the original design language, linework, proportions, and character features while adding oil-like layers.
-- For landscapes and objects, retain silhouettes, perspective, and material identity; adapt stroke direction and density to each surface.
+Adapt to the medium:
 
-If the user asks for a stronger painterly effect, increase pigment variation, stroke visibility, and canvas texture gradually, concentrating the increase away from faces. If they ask for a softer finish, blend stroke edges more and reduce contrast while retaining some layered texture. Do not impose a different genre or face design.
+- For photographs, prioritize recognizable faces and scene geometry; keep skin smooth but painterly, and make hair and surroundings visibly painted.
+- For existing illustrations, preserve the design language, linework, proportions, and character features while adding oil-like color layers.
+- For landscapes and objects, retain silhouettes, perspective, and material identity; adapt brush direction and density to each surface.
 
-Treat the supplied style references as a range: polished painted rendering, delicate light and shadow, and expressive textured brushwork. Choose the balance that fits the source and user preference. Preserve meaningful in-image text, logos, or symbols when they are part of the depicted subject or the user asks to keep them. Watermarks, URLs, and incidental source credits may be omitted unless the user asks to retain them; never invent replacement text or marks.
+Treat the supplied style references as a range from polished rendering to expressive texture. Choose the balance that fits the image and user preference. Preserve meaningful in-image text, logos, or symbols when they are part of the subject or the user asks to keep them. Watermarks, URLs, and incidental credits may be omitted unless the user asks to retain them; never invent replacement text or marks.
 
-After editing, check subject count, recognizable facial features and expressions, arrangement, composition, source lighting, and mood. Confirm that faces have smooth painted modeling without conspicuous marks, while surrounding areas retain enough color layering and texture to read as oil painting. Check that the texture elsewhere does not form distracting repeated lines. If a clear mismatch is fixable, make one targeted refinement. If a tool limitation prevents exact likeness, state that briefly. Present the resulting image and note any material limitation.
+After editing, check subject count, facial identity and expression, arrangement, lighting, and mood. Check that faces have smooth but visible painted color, hair has softly directional brush texture, and surrounding areas retain richer oil texture without distracting scratches. Present the resulting image and note any material limitation.
 
