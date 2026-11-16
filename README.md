@@ -28,13 +28,13 @@
 
 ```powershell
 $skillDir = if ($env:CODEX_HOME) {
-  Join-Path $env:CODEX_HOME 'skills\\painterly-oil-style'
+  Join-Path $env:CODEX_HOME 'skills\painterly-oil-style'
 } else {
-  Join-Path $HOME '.codex\\skills\\painterly-oil-style'
+  Join-Path $HOME '.codex\skills\painterly-oil-style'
 }
 
 New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
-Copy-Item .\\SKILL.md (Join-Path $skillDir 'SKILL.md') -Force
+Copy-Item .\SKILL.md (Join-Path $skillDir 'SKILL.md') -Force
 ```
 
 ## 사용
